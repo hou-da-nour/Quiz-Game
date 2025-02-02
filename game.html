@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <script src="game1.js" defer></script>
+    <title>Quiz Game</title>
+</head>
+<body onload="fun()">
+    <div class="quiz-game">
+        <div class="question">
+            <h1>Quiz Game</h1>
+            <p id="question"></p>
+        </div>
+        <div class="answers">
+            <div class="gif">
+                <img class="perfect" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2dqanVtbjE5enI1ZG0yaWRyOWY0eHI1em0zdG9qanExZ2c0MDNhcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DyQrKMpqkAhNHZ1iWe/giphy.gif"></img>
+                <img class="good" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNndubHhxeXRsZnc2Ym5kcno3c3Y0eW5yeXI1aG5hZmVpOXZjbmY4OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tIeCLkB8geYtW/giphy.gif"></img>
+                <img class="sad" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTkyeDluemMzZnE1Z2ozMzBrOWc0YzFrYjh5dng1OXZhNnFwZnc4ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jPLLdOQpZXHGxHcTn1/giphy.gif"></img>
+            </div>
+            <div class="answer" id="answer"></div>
+            <p class="comments"></p>
+            <div class="footer">
+                <button class="next-question" id="btn">Next question</button>
+                <p class="score"></p>
+            </div>
+        </div>
+    </div>
+    <audio  src="sounds/correct.mp3"></audio>
+    <audio  src="sounds/wrong.mp3"></audio>
+</body>
+</html>

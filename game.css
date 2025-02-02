@@ -1,0 +1,141 @@
+
+*{
+    box-sizing: border-box;
+    font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #0D1B2A;
+    margin: 0;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.quiz-game{
+    background-color: #1B263B;
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 0.5rem;
+}
+
+.answer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 0.5rem;
+    bottom: 20px;
+    margin-bottom: 3rem;
+    align-items: center;
+    color: beige;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.next-question {
+    border-radius: 0.5rem;
+    color: #E0E1DD;
+    background-color: #415A77;
+    height: 35px;
+    width: 100px;
+    position: relative;
+    border-color:#415A77;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+.footer p{
+    color: white;
+    border: 2px solid #778DA9;
+    border-radius: 0.5rem;
+    padding: 10px;
+}
+.answer button{
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    width: 250px;
+    background-color: #778DA9;
+    color: beige;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.btn.correct {
+    background-color: green;
+    color: white;
+    transition: 0.3s linear;
+    width: 270px;
+    font-size: 1rem;
+    font-weight: bold;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+
+.btn.wrong {
+    background-color: red;
+    color: white;
+    transition: 0.3s linear;
+    width: 270px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+#question{
+    text-align: center;
+    color: #E0E1DD;
+    font-size: 1.3rem;
+}
+
+.comments{
+    color: beige;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: auto;
+}
+
+.gif{
+    display: flex;
+    justify-content: center;
+}
+img{
+    border-radius: 0.5rem;
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+
+
+
+/* Small screens */
+@media (min-width : 768px){
+    .quiz-game{
+     width: 350px;
+    }
+}
+ /* Medium screens */
+ @media (min-width : 992px){
+     .quiz-game{
+         width: 400px;
+    }
+}
+ /* Large screens */
+ @media (min-width : 1200px){
+     .quiz-game{
+         width:400px;
+     }
+}
